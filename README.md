@@ -1,2 +1,2 @@
 # UnitOfWorkInMVC
-UnitOfWork pattern used with Command pattern with Ninject IoC in MVC app to archive transactional execution of bussines logic.
+UnitOfWork pattern used with Command pattern with Ninject IoC in MVC app in order to archive transactional execution of bussines logic.

@@ -1,0 +1,69 @@
+﻿@model IEnumerable<DAL.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Products</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Seller)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        using (Html.BeginForm("AddToBasket", "Order", FormMethod.Post, new { id = $"form-{item.Id}" }))
+        {
+            @Html.Hidden("Name", item.Name)
+            @Html.Hidden("Description", item.Description)
+            @Html.Hidden("Price", item.Price)
+            @Html.Hidden("Quantity", item.Quantity)
+            @Html.Hidden("Seller", item.Seller)
+
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Seller)
+                </td>
+                <td>
+                    @*@Html.ActionLink("Add to basket", "AddToBasket", new { product = item })*@
+                    <p>
+                        <input name="command" type="submit" value="Add to basket" />
+                    </p>
+                </td>
+            </tr>
+        }
+    }
+
+</table>
+
+<p>
+    @Html.ActionLink("GO TO BASKET", "UserBasket", "Order")
+</p>

@@ -1,0 +1,56 @@
+﻿@model UniotOfWorkInMVC.Domain.Basket
+
+@{
+    ViewBag.Title = "UserBasket";
+}
+
+<h2>User Basket</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Description
+        </th>
+        <th>
+            Price
+        </th>
+        <th>
+            Quantity
+        </th>
+        <th>
+            Seller
+        </th>
+    </tr>
+
+    @foreach (var item in Model.Products)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Seller)
+            </td>
+        </tr>
+    }
+</table>
+
+<p>
+    @using (Html.BeginForm("PlaceOrder", "Order", FormMethod.Post))
+    {
+        <input name="command" type="submit" value="SUBMIT ORDER" />
+    }
+</p>
+

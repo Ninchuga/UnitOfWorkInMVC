@@ -3,9 +3,9 @@ using System.Threading.Tasks;
 using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartup(typeof(UniotOfWorkInMVC.Startup))]
+[assembly: OwinStartup(typeof(UnitOfWorkInMVC.Startup))]
 
-namespace UniotOfWorkInMVC
+namespace UnitOfWorkInMVC
 {
     public class Startup
     {

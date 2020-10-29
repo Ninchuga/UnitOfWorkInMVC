@@ -7,10 +7,10 @@ using System.Web.Caching;
 using System.Web.Mvc;
 using TransactionManager;
 using TransactionManager.Commands;
-using UniotOfWorkInMVC.Domain;
-using UniotOfWorkInMVC.Extensions;
+using UnitOfWorkInMVC.Domain;
+using UnitOfWorkInMVC.Extensions;
 
-namespace UniotOfWorkInMVC.Controllers
+namespace UnitOfWorkInMVC.Controllers
 {
     public class OrderController : Controller
     {

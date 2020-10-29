@@ -1,7 +1,7 @@
 ﻿using DAL.Models;
 using System.Collections.Generic;
 
-namespace UniotOfWorkInMVC.Domain
+namespace UnitOfWorkInMVC.Domain
 {
     public class Basket
     {

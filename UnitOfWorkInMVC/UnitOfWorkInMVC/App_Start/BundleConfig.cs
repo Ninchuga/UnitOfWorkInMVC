@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace UniotOfWorkInMVC
+namespace UnitOfWorkInMVC
 {
     public class BundleConfig
     {

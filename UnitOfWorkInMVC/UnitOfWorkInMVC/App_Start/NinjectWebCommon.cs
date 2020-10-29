@@ -9,12 +9,12 @@ using TransactionManager.Commands;
 using TransactionManager.CommandHandlers;
 using DAL.Models;
 using TransactionManager;
-using UniotOfWorkInMVC.App_Start;
+using UnitOfWorkInMVC.App_Start;
 
 [assembly: WebActivatorEx.PreApplicationStartMethod(typeof(NinjectWebCommon), "Start")]
 [assembly: WebActivatorEx.ApplicationShutdownMethod(typeof(NinjectWebCommon), "Stop")]
 
-namespace UniotOfWorkInMVC.App_Start
+namespace UnitOfWorkInMVC.App_Start
 {
     public static class NinjectWebCommon 
     {

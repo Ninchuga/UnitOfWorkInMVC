@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace UniotOfWorkInMVC.Extensions
+namespace UnitOfWorkInMVC.Extensions
 {
     public static class OrderExtensions
     {

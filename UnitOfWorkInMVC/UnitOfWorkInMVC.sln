@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniotOfWorkInMVC", "UniotOfWorkInMVC\UniotOfWorkInMVC.csproj", "{9E02B8BA-7601-43AA-91E4-F2AE52E79D85}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitOfWorkInMVC", "UnitOfWorkInMVC\UnitOfWorkInMVC.csproj", "{9E02B8BA-7601-43AA-91E4-F2AE52E79D85}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionManager", "TransactionManager\TransactionManager.csproj", "{531E6001-6F44-45DC-A66C-9F5EC5EA67EF}"
 EndProject
